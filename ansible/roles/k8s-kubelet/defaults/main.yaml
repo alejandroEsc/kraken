@@ -3,6 +3,7 @@ kubelet_settings:
   address: 0.0.0.0
   alsologtostderr: false
   api-servers: "{{access_scheme}}://{{ master_private_ip }}:{{access_port}}"
+  cloud-provider: "aws"
   cadvisor-port: 4194
   cluster-dns: "{{ dns_ip }}"
   cluster-domain: "{{ dns_domain }}"

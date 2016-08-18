@@ -1,5 +1,7 @@
 ---
 controller_manager_settings:
+  #TEMP
+  cloud-provider: "aws"
   address: 0.0.0.0
   alsologtostderr: false
   concurrent-endpoint-syncs: 5

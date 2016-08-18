@@ -8,6 +8,8 @@ apiserver_settings:
   client-ca-file: "{{ kubernetes_cert_dir }}/kube-ca.pem"
   cors-allowed-origins: .*
   etcd-servers: "http://{{etcd_private_ip}}:4001"
+  # TEMP
+  cloud-provider: "aws"
   # TODO: enable this once we've got a separate etcd instance
   # etcd-servers-overrides: "/events#http://{{etcd_private_ip}}:4001"
   event-ttl: 1h0m0s
